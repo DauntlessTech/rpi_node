@@ -1,7 +1,14 @@
-var gpio = require("pi-gpio");
+var wpi = require('wiring-pi');
 
-gpio.open(16, "output", function(err) {		// Open pin 16 for output
-	gpio.write(16, 1, function() {			// Set pin 16 high (1)
-		gpio.close(16);						// Close pin 16
-	});
-});
+wpi.setup('wpi');
+
+var pin = 0;
+
+wpi.pinMode(pin, wpi.OUTPUT);
+
+var value = 1;
+
+setInterval(function() {
+  wpi.digitalWrite(pin, value);
+  value = +!value;
+}, 500);
