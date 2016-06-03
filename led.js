@@ -1,10 +1,7 @@
-var Gpio = require('onoff').Gpio,
-  led = new Gpio(17, 'out');
+var gpio = require("pi-gpio");
 
-
-setTimeout(blink(1), 1000);
-
-function blink(value){
-  value += !value;
-  led.writeSync(value);
-}
+gpio.open(16, "output", function(err) {		// Open pin 16 for output
+	gpio.write(16, 1, function() {			// Set pin 16 high (1)
+		gpio.close(16);						// Close pin 16
+	});
+});
