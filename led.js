@@ -2,7 +2,7 @@ var wpi = require('wiring-pi');
 
 wpi.setup('wpi');
 
-var pin = 0;
+var pin = 17;
 
 wpi.pinMode(pin, wpi.OUTPUT);
 
