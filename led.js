@@ -1,7 +1,7 @@
 var wpi = require('wiring-pi'),
 morse = require('morse-node').create(),
 msg = morse.encode('Hello World');
-console.log('msg');
+console.log(msg);
 
 wpi.setup('gpio');
 
