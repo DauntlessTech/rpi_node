@@ -1,6 +1,6 @@
 var wpi = require('wiring-pi');
 
-wpi.setup('wpi');
+wpi.setup('gpio');
 
 var pin = 17;
 
