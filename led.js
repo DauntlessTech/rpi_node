@@ -1,17 +1,41 @@
-var wpi = require('wiring-pi'),
-morse = require('morse-node').create(),
-msg = morse.encode('Hello World');
-console.log(msg);
+// var wpi = require('wiring-pi'),
+// morse = require('morse-node').create(),
+// msg = morse.encode('Hello World');
+// console.log(msg);
+//
+// wpi.setup('gpio');
+//
+// var pin = 17;
+//
+// wpi.pinMode(pin, wpi.OUTPUT);
+//
+// var value = 1;
+//
+// setInterval(function() {
+//   wpi.digitalWrite(pin, value);
+//   value = +!value;
+// }, 500);
 
-wpi.setup('gpio');
+// button is attaced to pin 17, led to 18
+var GPIO = require('onoff').Gpio,
+    led = new GPIO(17, 'out'),
+    button = new GPIO(18, 'in', 'both');
 
-var pin = 17;
+// define the callback function
+function light(err, state) {
 
-wpi.pinMode(pin, wpi.OUTPUT);
+  // check the state of the button
+  // 1 == pressed, 0 == not pressed
+  if(state == 1) {
+    // turn LED on
+    led.writeSync(1);
+  } else {
+    // turn LED off
+    led.writeSync(0);
+  }
 
-var value = 1;
+}
 
-setInterval(function() {
-  wpi.digitalWrite(pin, value);
-  value = +!value;
-}, 500);
+// pass the callback function to the
+// as the first argument to watch()
+button.watch(light);
