@@ -1,0 +1,78 @@
+11:37:21.356 INFO  - Using data dir '.'
+11:37:21.500 ERROR - Error parsing file '.\led.js'.
+11:37:21.500 ERROR - Error parsing file '.\.gitignore'.
+11:37:21.500 ERROR - Error parsing file '.\server-0.16.2.jar'.
+11:37:21.501 INFO  - Region : local
+11:37:21.524 INFO  - Initializing mail transport. Username : example@gmail.com. SMTP host : smtp.gmail.com:587
+11:37:21.680 INFO  - Plain tcp/ip hardware server port 8442.
+11:37:21.680 WARN  - ATTENTION. Certificate C:\Users\zacha\documents\github\rpi_node and key C:\Users\zacha\documents\github\rpi_node paths not valid. Using embedded certs. This is not secure. Please replace it with your own certs.
+11:37:21.830 INFO  - SSL hardware port 8441.
+11:37:21.834 WARN  - ATTENTION. Server certificate paths cert : 'C:\Users\zacha\documents\github\rpi_node', key : 'C:\Users\zacha\documents\github\rpi_node' - not valid. Using embedded server certs and one way ssl. This is not secure. Please replace it with your own certs.
+11:37:21.880 INFO  - Application server port 8443.
+11:37:21.926 INFO  - HTTP API port 8080.
+11:37:21.931 WARN  - ATTENTION. Certificate C:\Users\zacha\documents\github\rpi_node and key C:\Users\zacha\documents\github\rpi_node paths not valid. Using embedded certs. This is not secure. Please replace it with your own certs.
+11:37:21.996 INFO  - HTTPS API port 9443.
+11:37:22.002 WARN  - ATTENTION. Certificate C:\Users\zacha\documents\github\rpi_node and key C:\Users\zacha\documents\github\rpi_node paths not valid. Using embedded certs. This is not secure. Please replace it with your own certs.
+11:37:22.053 INFO  - HTTPS admin UI port 7443.
+11:37:22.053 INFO  - Web Sockets port 8082.
+11:37:22.054 WARN  - ATTENTION. Certificate C:\Users\zacha\documents\github\rpi_node and key C:\Users\zacha\documents\github\rpi_node paths not valid. Using embedded certs. This is not secure. Please replace it with your own certs.
+11:37:22.129 INFO  - Web SSL Sockets port 8081.
+11:37:22.249 ERROR - Error initializing hardware, port 8442
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:125)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:498)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1271)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:413)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:399)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:198)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:349)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:358)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:374)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Unknown Source)
+11:40:42.963 INFO  - Using data dir '.'
+11:40:43.115 ERROR - Error parsing file '.\server-0.16.2.jar'.
+11:40:43.116 ERROR - Error parsing file '.\.gitignore'.
+11:40:43.116 ERROR - Error parsing file '.\led.js'.
+11:40:43.116 INFO  - Region : local
+11:40:43.140 INFO  - Initializing mail transport. Username : example@gmail.com. SMTP host : smtp.gmail.com:587
+11:40:43.329 INFO  - Plain tcp/ip hardware server port 8442.
+11:40:43.330 WARN  - ATTENTION. Certificate C:\Users\zacha\documents\github\rpi_node and key C:\Users\zacha\documents\github\rpi_node paths not valid. Using embedded certs. This is not secure. Please replace it with your own certs.
+11:40:43.488 INFO  - SSL hardware port 8441.
+11:40:43.492 WARN  - ATTENTION. Server certificate paths cert : 'C:\Users\zacha\documents\github\rpi_node', key : 'C:\Users\zacha\documents\github\rpi_node' - not valid. Using embedded server certs and one way ssl. This is not secure. Please replace it with your own certs.
+11:40:43.532 INFO  - Application server port 8443.
+11:40:43.583 INFO  - HTTP API port 8080.
+11:40:43.587 WARN  - ATTENTION. Certificate C:\Users\zacha\documents\github\rpi_node and key C:\Users\zacha\documents\github\rpi_node paths not valid. Using embedded certs. This is not secure. Please replace it with your own certs.
+11:40:43.638 INFO  - HTTPS API port 9443.
+11:40:43.643 WARN  - ATTENTION. Certificate C:\Users\zacha\documents\github\rpi_node and key C:\Users\zacha\documents\github\rpi_node paths not valid. Using embedded certs. This is not secure. Please replace it with your own certs.
+11:40:43.678 INFO  - HTTPS admin UI port 7443.
+11:40:43.678 INFO  - Web Sockets port 8082.
+11:40:43.679 WARN  - ATTENTION. Certificate C:\Users\zacha\documents\github\rpi_node and key C:\Users\zacha\documents\github\rpi_node paths not valid. Using embedded certs. This is not secure. Please replace it with your own certs.
+11:40:43.700 INFO  - Web SSL Sockets port 8081.
+11:40:43.800 ERROR - Error initializing hardware, port 8442
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:125)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:498)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1271)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:413)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:399)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:198)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:349)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:358)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:374)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Unknown Source)
