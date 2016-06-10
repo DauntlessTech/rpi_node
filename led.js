@@ -16,7 +16,10 @@
 //   value = +!value;
 // }, 500);
 
-// button is attaced to pin 17, led to 18
+var Blynk = require('blynk-library');
+var AUTH = "249414e434de41048be27bcbd0d44c22";
+var blynk = new Blynk.Blynk(AUTH, options= {addr:"192.168.1.118"});
+
 var GPIO = require('onoff').Gpio,
     led = new GPIO(17, 'out'),
     button = new GPIO(18, 'in', 'both');

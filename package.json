@@ -4,10 +4,8 @@
   "description": "Simple app for testing GPIO on raspi",
   "main": "led.js",
   "dependencies": {
+    "blynk-library": "0.0.36",
     "onoff": "^1.1.0"
-  },
-  "devDependencies": {
-    "pi-gpio": "0.0.8"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
