@@ -21,6 +21,9 @@ var wpi = require('wiring-pi'),
 morse = require('morse-node').create(),
 msg = morse.encode('Hello World');
 console.log('msg');
+<<<<<<< HEAD
+>>>>>>> parent of 80f09ac... fix: remove quotes around msg in the morse code log
+=======
 >>>>>>> parent of 80f09ac... fix: remove quotes around msg in the morse code log
 
 var Blynk = require('blynk-library');
